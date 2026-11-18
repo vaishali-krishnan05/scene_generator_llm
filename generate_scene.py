@@ -12,7 +12,9 @@ OLLAMA_BASE_URL = "http://localhost:11434"
 DEFAULT_MODEL = "gemma4:12b"
 DEFAULT_LMSTUDIO_MODEL = "google/gemma-4-12b"
 
-
+# Define the instructions given to the language model for story generation.
+# The prompt also controls the required JSON structure and content safety rules.
+SYSTEM_PROMPT = """You create illustrated story scripts as JSON.
 SYSTEM_PROMPT = """You create illustrated story scripts as JSON.
 First decide whether the user's input is a request for a child-friendly fictional
 story or a story premise suitable for a comic.
